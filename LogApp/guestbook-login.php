@@ -8,9 +8,10 @@
 		$lastname = mysqli_real_escape_string($conn,$_POST['lastname']);
 		$firstname = mysqli_real_escape_string($conn,$_POST['firstname']);
 		$address = mysqli_real_escape_string($conn,$_POST['address']);
+		$logdate = mysqli_real_escape_string($conn,$_POST['logdate']);
 
 		// Define query
-		$query = "SELECT * FROM person";
+		$query = "SELECT * FROM logapp_db";
 
 		// Select database and execute query
 		mysqli_select_db($conn, DB_NAME);

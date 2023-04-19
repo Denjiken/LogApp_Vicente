@@ -35,7 +35,7 @@ if(isset($_POST['submit'])){
 } 
 
 // Fetch data
-$query = 'SELECT * FROM person ORDER BY id ASC LIMIT 25';
+$query = 'SELECT * FROM logapp_db ORDER BY id ASC LIMIT 25';
 $result = mysqli_query($conn, $query);
 
 if(mysqli_num_rows($result) > 1){
