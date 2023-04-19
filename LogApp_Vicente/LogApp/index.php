@@ -10,7 +10,7 @@
 		$address = mysqli_real_escape_string($conn,$_POST['address']);
 
 		// Define query
-		$query = "INSERT INTO person(lastname, firstname, address) VALUES('$lastname', '$firstname', '$address')";
+		$query = "INSERT INTO logapp_db(lastname, firstname, address) VALUES('$lastname', '$firstname', '$address')";
 
 		// Select database and execute query
 		mysqli_select_db($conn, DB_NAME);
